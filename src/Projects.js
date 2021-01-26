@@ -35,7 +35,7 @@ export default function About() {
         </div>
 
         <Controller>
-            <Scene duration={1700} pin=".projects-title">
+            <Scene duration={1800} pin=".projects-title">
                 <div className="projects-title">
                     <h2> PROJECTS </h2>
                 </div>

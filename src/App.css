@@ -3,8 +3,16 @@
 }
 
 .frontpage {
+  height: 300px;
   background: lightblue;
-  color: white;
+  color: black;
+  padding-top: 30vh;
+}
+
+.frontpage h1 {
+  font-size: 30px;
+  max-width: 35%;
+  letter-spacing: .5px;
 }
 
 .about {
@@ -22,6 +30,7 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 30px;
+  margin: 0!important;
 }
 
 .projects-title {
@@ -33,9 +42,10 @@
   justify-content: flex-end;
   align-items: center;
   font-size: 30px;
+  margin: 0!important;
 }
 
-.about-title h2 {
+.about-title, .projects-title h2 {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -43,8 +53,6 @@
   padding: 10px 30px;
   border-radius: 5px;
   margin: 50px 120px;
-
-
 }
 
 .about-pages {
