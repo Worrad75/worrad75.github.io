@@ -6,8 +6,6 @@ export default class About extends React.Component {
         super(props);
     }
 
-
-
     render() {
         return <section className="about">
 
@@ -19,7 +17,7 @@ export default class About extends React.Component {
                     </div>
                 </Scene>
             </Controller>
-            
+
         <div className="about-pages">
 
             <div>
