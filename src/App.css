@@ -14,8 +14,8 @@
 }
 
 .about-title {
-  width: 50%;
   color: black;
+  width: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,11 +24,26 @@
   font-size: 30px;
 }
 
+.projects-title {
+  color: black;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+}
+
 .about-title h2 {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 10px 30px;
+  border-radius: 5px;
+  margin: 50px 120px;
+
 
 }
 

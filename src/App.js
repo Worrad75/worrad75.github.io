@@ -2,16 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Frontpage from './Frontpage'
 import About from './About'
+import Projects from './Projects'
 
 function App() {
   return (
     <div className="App">
-      <Frontpage>
-        FRONTPAGE TEST
-      </Frontpage>
-      <About>
-        ABOUT TEST
-      </About>
+      {/* <Frontpage></Frontpage> */}
+      <About></About>
+      <Projects></Projects>
     </div>
   );
 }

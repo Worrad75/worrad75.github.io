@@ -1,18 +1,9 @@
 import React from 'react';
 import { Controller, Scene } from 'react-scrollmagic';
 
-export default function About(){
+export default function About() {
 
     return <section className="about">
-
-
-        <Controller>
-            <Scene duration={1700} pin=".about-title">
-                <div className="about-title">
-                    <h2> about me </h2>
-                </div>
-            </Scene>
-        </Controller>
 
         <div className="about-pages">
 
@@ -41,9 +32,16 @@ export default function About(){
                 dhe i ngatërroi për të krijuar një libër mostër.</p>
             </div>
 
-
         </div>
-        
+
+        <Controller>
+            <Scene duration={1700} pin=".projects-title">
+                <div className="projects-title">
+                    <h2> PROJECTS </h2>
+                </div>
+            </Scene>
+        </Controller>
+
     </section>
 
 }
