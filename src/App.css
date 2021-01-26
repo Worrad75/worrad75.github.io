@@ -2,37 +2,61 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.frontpage {
+  background: lightblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about {
+  background-color: whitesmoke;
+  height: 300vh;
+  display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-title {
+  width: 50%;
+  color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+}
+
+.about-title h2 {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+
+}
+
+.about-pages {
+  color: white;
+  width: 50%;
+}
+
+.about-pages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-pages div > p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.about-pages div:nth-child(1) {
+  background-color: rgb(56, 134, 89);
+}
+.about-pages div:nth-child(2) {
+  background-color: purple;
+}
+.about-pages div:nth-child(3) {
+  background-color: orange;
 }
