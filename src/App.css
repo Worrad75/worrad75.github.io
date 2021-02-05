@@ -2,15 +2,34 @@
   text-align: center;
 }
 
+#text-carousel-button {
+  outline: none;
+  font-size: 30px;
+  height: 15vh;
+  width: 30vh;
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9C27B0, #E040FB);
+  border: 0;
+  margin-top: 250px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+#placeholder {
+  margin-top: 60px;
+}
+
 .frontpage {
   height: 70vh;
   background: lightblue;
   color: black;
   padding-top: 30vh;
-}
-
-.frontpage button {
-  /* margin-top: 80px; */
 }
 
 .frontpage h1 {

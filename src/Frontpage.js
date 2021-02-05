@@ -9,7 +9,8 @@ export default class Frontpage extends Component {
         this.state = {
             text: ["Hi, my name is darrow", "that's right, keep clicking", "I'm a software engineer", "come, let me show you..."],
             count : -1,
-            nextText : []
+            nextText : [],
+            placeholder: true,
         };
     }
 
@@ -19,7 +20,7 @@ export default class Frontpage extends Component {
 
     changeTypedWording = () => {
         if(this.state.count < 3) {
-            this.setState({ count: this.state.count += 1 })
+            this.setState({ count: this.state.count += 1, placeholder: false })
             const elem = document.getElementById('type-written')
             if(elem) elem.parentNode.removeChild(elem);
 
@@ -42,7 +43,7 @@ export default class Frontpage extends Component {
                 <div id="typewriter">
                     {/* <h1 id="type-written">{this.state.text[0]}</h1> */}
                 </div>
-                
+                    {this.state.placeholder ? <div id="placeholder"></div> : <></>}
                     <button id="text-carousel-button" onMouseDown={this.changeTypedWording}>click me!</button>
                 
                 {this.state.count > 3 ? <Line></Line> : <div></div>}
