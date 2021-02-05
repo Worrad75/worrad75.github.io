@@ -3,16 +3,43 @@
 }
 
 .frontpage {
-  height: 300px;
+  height: 70vh;
   background: lightblue;
   color: black;
   padding-top: 30vh;
 }
 
+.frontpage button {
+  /* margin-top: 80px; */
+}
+
 .frontpage h1 {
   font-size: 30px;
-  max-width: 35%;
+  max-width: 50%;
   letter-spacing: .5px;
+}
+
+#type-written {
+  font-size: 50px;
+  max-width: 60%;
+}
+
+.optionButton {
+  font-family:'didot', 'serif';
+  font-size: 30px;
+  height: 100px;
+  width: 250px;
+  margin-top: -40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: grey;
+  color: white;
+  border: .2em solid black;
+}
+
+.optionButton:hover {
+  background-color: orange;
+  color: black;
 }
 
 .about {
@@ -83,3 +110,65 @@
 .about-pages div:nth-child(3) {
   background-color: orange;
 }
+
+
+
+.content {
+justify-content: center;
+width: 100%;
+height: 200px;
+color: white;
+cursor: pointer;
+text-transform: uppercase;
+padding-bottom: 20px;
+margin-top: 50px;
+position: relative;
+ }
+
+.content .line {
+margin-top:100px;
+color: black;
+height: 2px;
+background: black;
+position: absolute;
+right: 0;
+-webkit-animation: dude .75s 1 forwards;
+-moz-animation: dude .75s 1 forwards;
+-o-animation: dude .75s 1 forwards;
+animation: dude .75s 1 forwards;
+
+ }
+
+   @-webkit-keyframes dude {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-moz-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes dude {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
