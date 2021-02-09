@@ -7,7 +7,7 @@ export default class Frontpage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: ["Hi, my name is darrow", "that's right, keep clicking", "I'm a software engineer", "come, let me show you..."],
+            text: ["Hi, my name is Darrow.", "Please keep clicking.", "I'm a Software Engineer!", "come, let me show you..."],
             count : -1,
             nextText : [],
             placeholder: true,
@@ -19,19 +19,21 @@ export default class Frontpage extends Component {
 
 
     changeTypedWording = () => {
-        if(this.state.count < 3) {
-            this.setState({ count: this.state.count += 1, placeholder: false })
+        if (this.state.count < this.state.text.length - 1) {
+            const newCount = this.state.count + 1
+            this.setState({ count: newCount, placeholder: false })
             const elem = document.getElementById('type-written')
             if(elem) elem.parentNode.removeChild(elem);
 
-            const test = document.createElement('h1')
-            test.id = 'type-written'
-            const newText = this.state.text[this.state.count]
-            test.innerText = newText
-            test.style.maxWidth = newText.length * 5
-            document.getElementById("typewriter").appendChild(test)
+            const freshTypewritter = document.createElement('h1')
+            freshTypewritter.id = 'type-written'
+            const newText = this.state.text[newCount]
+            freshTypewritter.innerText = newText
+            freshTypewritter.style.maxWidth = newText.length * 5
+            document.getElementById("typewriter").appendChild(freshTypewritter)
         } else {
-            this.setState({ count: this.state.count += 1 })
+            const newCount = this.state.count + 1
+            this.setState({ count: newCount })
             const buttonToRemove = document.getElementById("text-carousel-button");
             buttonToRemove.parentElement.removeChild(buttonToRemove)
         }
@@ -40,13 +42,14 @@ export default class Frontpage extends Component {
     render() {
         return (
             <div className="frontpage">
-                <div id="typewriter">
-                    {/* <h1 id="type-written">{this.state.text[0]}</h1> */}
-                </div>
-                    {this.state.placeholder ? <div id="placeholder"></div> : <></>}
-                    <button id="text-carousel-button" onMouseDown={this.changeTypedWording}>click me!</button>
+
+                <div id="typewriter"></div>
+                {this.state.placeholder ? <div id="placeholder"></div> : <></>}
                 
-                {this.state.count > 3 ? <Line></Line> : <div></div>}
+                <button id="text-carousel-button" onMouseDown={this.changeTypedWording}>click me!</button>
+                
+                {this.state.count > this.state.text.length -1 ? <Line></Line> : <div></div>}
+
             </div>)
     }
 }

@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-pages">
 
             <div>
-                <h2>Project 1</h2>
+                <h2>Algorithm Visualizer</h2>
                 <p>Lorem Ipsum është një tekst shabllon i industrisë
                 së printimit dhe shtypshkronjave. Lorem Ipsum ka
                 qenë teksti shabllon i industrisë që nga vitet 1500

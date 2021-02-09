@@ -28,9 +28,17 @@
 .frontpage {
   height: 70vh;
   background: lightblue;
-  color: black;
+  color: grey;
   padding-top: 30vh;
+  /* background-image: url(chillin.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: 200vh; */
+  
 }
+
+/* .frontpage image {
+  filter: brightness(50%);
+} */
 
 .frontpage h1 {
   font-size: 30px;
@@ -38,9 +46,14 @@
   letter-spacing: .5px;
 }
 
+.frontpage image {
+  max-width: 100vh;
+  max-height: 100vh;
+}
+
 #type-written {
   font-size: 50px;
-  max-width: 60%;
+  max-width: 55%;
 }
 
 .optionButton {
