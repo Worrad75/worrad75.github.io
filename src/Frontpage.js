@@ -1,7 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import './animation.css'
-import Line from './Line'
+import Options from './Options'
 
 export default class Frontpage extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ export default class Frontpage extends Component {
 //      "who I am" and "what I've been up to", which will lead to about me and projects sections respectively
 
 
-    changeTypedWording = () => {
+    changeTypedWording = () => {        
         if (this.state.count < this.state.text.length - 1) {
             const newCount = this.state.count + 1
             this.setState({ count: newCount, placeholder: false })
@@ -48,7 +48,7 @@ export default class Frontpage extends Component {
                 
                 <button id="text-carousel-button" onMouseDown={this.changeTypedWording}>click me!</button>
                 
-                {this.state.count > this.state.text.length -1 ? <Line></Line> : <div></div>}
+                {this.state.count > this.state.text.length -1 ? <Options></Options> : <div></div>}
 
             </div>)
     }
