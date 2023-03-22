@@ -1,0 +1,8 @@
+Model Information:
+* title:	Boat Ride (Vertex color only)
+* source:	https://sketchfab.com/3d-models/boat-ride-vertex-color-only-152042ed94f345a6843cc1e752d65140
+* author:	Crowcage (https://sketchfab.com/crowcage)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

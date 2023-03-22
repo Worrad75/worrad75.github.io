@@ -1,0 +1,73 @@
+/* The webpage overall styling */
+* {
+    /* background: black; */
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: grey;
+}
+
+/*  This is for styling the main container that holds everything */
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background: #f7f7f7; */
+}
+
+/* This styles the navbar and its contents */
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+
+/* This styles the unlisted links in the navbar */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+/* This changes the appearance of the listed links in the navbar */
+#navbar ul li {
+    height: 60px;
+    width: 80px;
+    margin: 0 30px;
+    display: grid;
+    place-items: center;
+    color: navy;
+}
+
+#content {
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    left: 12%;
+    top: calc(50% - 250px);
+    background: none;
+}
+
+#content h2 {
+    font-size: 140px;
+    color: grey;
+    background: none;
+}
+
+#content p {
+    font-size: 20px;
+    color: rgb(189, 189, 189);
+    background: none;
+}
+
+/* This adds some hover effects over the button */
+#content button:hover {
+    color: navy;
+}
