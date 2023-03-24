@@ -1,0 +1,17 @@
+#content {
+    height: 50%;
+    width: 70%;
+    position: absolute;
+    left: 8%;
+    top: calc(50% - 250px);
+}
+
+#content h2 {
+    font-size: 140px;
+    color: rgb(57, 197, 183);
+}
+
+#content p {
+    font-size: 20px;
+    color: rgb(20, 138, 189);
+}

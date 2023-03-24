@@ -1,0 +1,29 @@
+#navbar {
+    position: absolute;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+}
+
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+#navbar ul li {
+    width: 100px;
+    margin: 0 30px;
+    display: grid;
+    place-items: center;
+}
+
+#navbar a {
+    margin-top: 20px;
+    color: white;
+    background: purple;
+}

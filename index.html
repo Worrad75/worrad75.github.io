@@ -7,6 +7,8 @@
     <title>Darrow Palast</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css" /> 
     <link rel="stylesheet" type="text/css" href="./css/animation.css" /> 
+    <link rel="stylesheet" type="text/css" href="./css/content.css" /> 
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" /> 
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
@@ -14,8 +16,9 @@
     <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
     <script type="module" src="index.js">
     </script>
-    <canvas id="webgl"></canvas>
-    <div id="container">
+
+    <div id="parent">
+        <canvas id="webgl"></canvas>
         <div id="navbar">
             <ul>
                 <li class="active"><a href="#">Home</a></li>
@@ -25,11 +28,15 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+    </div>
 
-        <div id="content">
-            <h2>DARROW PALAST</h2>
-            <p>Software Engineer and Digital Creator</p>
-        </div>
+   
+
+    
+
+    <div id="content">
+        <h2>DARROW PALAST</h2>
+        <p>Software Engineer and Digital Creator</p>
     </div>
 </body>
 </html>

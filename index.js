@@ -7,24 +7,18 @@ const scene = new THREE.Scene()
 const loader = new THREE.GLTFLoader();
 // const controls = new THREE.OrbitControls();
 let mixer;
+const clock = new THREE.Clock()
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
 }
 
-// Sets a 12 by 12 gird helper
-// const gridHelper = new THREE.GridHelper(12, 12);
-// scene.add(gridHelper);
-
-// Sets the x, y, and z axes with each having a length of 4
-// const axesHelper = new THREE.AxesHelper(4);
-// scene.add(axesHelper);
 
 
 loader.load('./public/assets/boat/boat.glb', function(glb){
     const model = glb.scene
     model.rotation.y = Math.PI / 2;
-    model.scale.set(1,1,1)
+    model.scale.set(2,2,2)
     scene.add(model)
     mixer = new THREE.AnimationMixer(model)
     const clips = glb.animations
@@ -40,12 +34,12 @@ loader.load('./public/assets/boat/boat.glb', function(glb){
     console.log("an error occured: " + error)
 })
 
-const light = new THREE.DirectionalLight(0xffffff, 1)
-light.position.set(2,2,5)
+const light = new THREE.DirectionalLight(0xffffff, 2)
+light.position.set(3,3,5)
 scene.add(light)
 
 const camera = new THREE.PerspectiveCamera(90, sizes.width/sizes.height, 0.1, 100)
-camera.position.set(0,1,3)
+camera.position.set(-1.5,2,3.5)
 scene.add(camera)
 
 const canvas = document.querySelector('#webgl')
@@ -54,18 +48,16 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-renderer.shadowMap.enabled = true
-renderer.gammaOutput = true   
-const clock = new THREE.Clock()
 renderer.setAnimationLoop(animate)
 
 function animate() {
+    console.log("animate ran")
     mixer.update(clock.getDelta())
     renderer.render(scene, camera)
 }
 
-window.addEventListener('resize', function() {
-    camera.aspect = sizes.width/sizes.height
-    camera.updateProjectionMatrix();
-    renderer.setSize(sizes.width/sizes.height)
-})
+// window.addEventListener('resize', function() {
+//     camera.aspect = sizes.width/sizes.height
+//     camera.updateProjectionMatrix();
+//     renderer.setSize(sizes.width/sizes.height)
+// })
