@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Worrad75/my-personal-website/issues"
   },
-  "homepage": "https://github.com/Worrad75/my-personal-website#readme",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "homepage": "https://github.com/Worrad75/my-personal-website#readme"
 }

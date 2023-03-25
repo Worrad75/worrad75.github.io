@@ -17,8 +17,9 @@ const sizes = {
 
 loader.load('./public/assets/boat/boat.glb', function(glb){
     const model = glb.scene
-    model.rotation.y = Math.PI / 2;
-    model.scale.set(2,2,2)
+    model.rotation.y = 145;
+    model.rotation.z = .25;
+    model.scale.set(2.2,2.2,2.2)
     scene.add(model)
     mixer = new THREE.AnimationMixer(model)
     const clips = glb.animations
@@ -39,7 +40,7 @@ light.position.set(3,3,5)
 scene.add(light)
 
 const camera = new THREE.PerspectiveCamera(90, sizes.width/sizes.height, 0.1, 100)
-camera.position.set(-1.5,2,3.5)
+camera.position.set(-3,2,5)
 scene.add(camera)
 
 const canvas = document.querySelector('#webgl')
@@ -52,12 +53,7 @@ renderer.setAnimationLoop(animate)
 
 function animate() {
     console.log("animate ran")
+    camera.aspect = window.innerWidth / window.innerHeight;
     mixer.update(clock.getDelta())
     renderer.render(scene, camera)
 }
-
-// window.addEventListener('resize', function() {
-//     camera.aspect = sizes.width/sizes.height
-//     camera.updateProjectionMatrix();
-//     renderer.setSize(sizes.width/sizes.height)
-// })

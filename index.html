@@ -1,42 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darrow Palast</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css" /> 
-    <link rel="stylesheet" type="text/css" href="./css/animation.css" /> 
-    <link rel="stylesheet" type="text/css" href="./css/content.css" /> 
-    <link rel="stylesheet" type="text/css" href="./css/navbar.css" /> 
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/animation.css" />
+    <link rel="stylesheet" type="text/css" href="./css/content.css" />
+    <link rel="stylesheet" type="text/css" href="./css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./css/button.css" />
+
+
 </head>
+
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+        integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+        crossorigin="anonymous"></script>
     <!-- <script src="https://unpkg.com/browse/three@0.97.0/examples/js/controls/OrbitControls.js"></script> -->
     <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
-    <script type="module" src="index.js">
-    </script>
+    <script src="./router.js"></script>
+    <script type="module" src="index.js"></script>
 
     <div id="parent">
-        <canvas id="webgl"></canvas>
         <div id="navbar">
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">My Story</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="buttons">
+                <li class="active">
+                    <button role="button" class="nav-button">
+                        <a data-link href="/" onclick="route()">
+                            Home
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button role="button" class="nav-button">
+                        <a data-link href="/projects" onclick="route()">
+                            Projects
+                        </a>
+                    </button>
+
+                </li>
+                <li>
+                    <button role="button" class="nav-button">
+                        <a data-link href="/my_story" onclick="route()">
+                            My Story
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button role="button" class="nav-button">
+                        <a data-link href="/resume" onclick="route()">
+                            Resume
+                        </a>
+                    </button>
+                </li>
+                <li>
+                    <button role="button" class="nav-button">
+                        <a data-link href="/contact" onclick="route()">
+                            Contact
+                        </a>
+                    </button>
+                </li>
             </ul>
         </div>
+
+        <div id="landing-page">
+            <canvas id="webgl"></canvas>
+            <div id="credit">boat animation by Crowcage</div>
+
+            <div id="content">
+                <h2>DARROW PALAST</h2>
+                <p>Software Engineer and Digital Creator</p>
+            </div>
+        </div>
+        <div id="alternate-page"></div>
     </div>
 
-   
-
-    
-
-    <div id="content">
-        <h2>DARROW PALAST</h2>
-        <p>Software Engineer and Digital Creator</p>
-    </div>
 </body>
+
 </html>

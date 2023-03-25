@@ -3,15 +3,23 @@
     width: 70%;
     position: absolute;
     left: 8%;
-    top: calc(50% - 250px);
+    top: calc(70% - 250px);
 }
 
 #content h2 {
-    font-size: 140px;
+    font-size: 100px;
     color: rgb(57, 197, 183);
 }
 
 #content p {
     font-size: 20px;
-    color: rgb(20, 138, 189);
+    /* color: rgba(254,255,110,255) */
+    color: rgba(60,117,174,255)
+}
+
+#credit {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: rgb(22, 96, 96);
 }
