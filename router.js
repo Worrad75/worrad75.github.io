@@ -26,9 +26,9 @@ const handleLocation = async () => {
     const html = await fetch(route).then((data) => data.text());
     // console.log("html found: " + html)
     if(route !== './pages/landing-page.html') {
-        document.getElementById("landing-page").style.visibility='hidden'
+        document.getElementById("landing-page").style.display ='none'
     } else {
-        document.getElementById("landing-page").style.visibility='visible'
+        document.getElementById("landing-page").style.display='block'
     }
     document.getElementById("alternate-page").innerHTML = html;
 };
@@ -37,3 +37,4 @@ init()
 window.onpopstate = handleLocation;
 window.route = route;
 handleLocation();
+window.onresize = init

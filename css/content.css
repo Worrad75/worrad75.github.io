@@ -8,13 +8,12 @@
 
 #content h2 {
     font-size: 100px;
-    color: rgba(54,157,128,255);
+    color: rgb(54,157,128);
 }
 
 #content p {
     font-size: 20px;
-    /* color: rgba(254,255,110,255) */
-    color: rgba(60,117,174,255)
+    color: rgb(60,117,174)
 }
 
 #credit {
@@ -22,4 +21,66 @@
     bottom: 20px;
     left: 20px;
     color: rgb(22, 96, 96);
+}
+
+.information {
+    height: 100vh;
+    width: 100%;
+}
+
+#resume {
+    height: 130vh;
+    background-color: grey;
+}
+
+
+.information h2 {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 85px;
+    color: rgba(54,157,128,255);
+}
+
+.information h4 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: relative;
+    width: 75%;
+    left: 10%;
+    top: 25%;
+    font-size: 30px;
+    color: rgba(54,157,128,255);
+}
+
+.information .float-container {
+    width: 75%;
+    position: relative;
+    top: 25%;
+    left: 15%;
+    font-size: 20px;
+    color: rgba(54,157,128,255);
+}
+
+.information p {
+    width: 75%;
+    position: relative;
+    top: 25%;
+    left: 15%;
+    font-size: 20px;
+    color: rgba(54,157,128,255);
+}
+
+.information p.right {
+    left: none;
+    right: 15%;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+}
+
+.float-container {
+    top:30%;
 }
