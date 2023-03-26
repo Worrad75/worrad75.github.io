@@ -1,3 +1,5 @@
+import { init } from './index.js'
+
 const route = (event) => {
     event = event || window.event;
     event.preventDefault();
@@ -31,7 +33,7 @@ const handleLocation = async () => {
     document.getElementById("alternate-page").innerHTML = html;
 };
 
+init()
 window.onpopstate = handleLocation;
 window.route = route;
-
 handleLocation();
