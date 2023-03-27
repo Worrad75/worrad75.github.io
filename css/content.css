@@ -28,16 +28,11 @@
     width: 100%;
 }
 
-#resume {
-    height: 130vh;
-    background-color: grey;
-}
-
-
 .information h2 {
     position: relative;
     top: 20%;
     left: 10%;
+    width: 90%;
     font-size: 85px;
     color: rgba(54,157,128,255);
 }
@@ -72,7 +67,7 @@
 }
 
 .information p.right {
-    left: none;
+    left: 15%;
     right: 15%;
 }
 
@@ -83,4 +78,53 @@
 
 .float-container {
     top:30%;
+}
+
+iframe {
+    position: relative;
+    height: 60%;
+    top: 25%;
+    width: 80%;
+    left: 10%;
+    bottom: 5%;
+}
+
+#resume {
+    height: 150vh;
+    background-color: black;
+}
+
+#resume h2 {
+    top: 13%;
+}
+
+#my-story {
+    height: 250vh;
+    background-color: black;
+}
+
+#my-story h4 {
+    justify-content: center;
+    display: flex;
+    top: 15%;
+}
+
+#my-story h2 {
+    top: 10%;
+}
+
+#my-story p {
+    top: 15%;
+    text-indent: 30px;
+    display: block;
+}
+
+#my-story img {
+    position: relative;
+    display: block;
+    top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
 }

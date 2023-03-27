@@ -56,7 +56,6 @@ export function init() {
 
 
 function animate() {
-    console.log("animate ran")
     camera.aspect = window.innerWidth / window.innerHeight;
     mixer.update(clock.getDelta())
     renderer.render(scene, camera)
